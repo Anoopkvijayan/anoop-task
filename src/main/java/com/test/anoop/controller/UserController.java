@@ -32,12 +32,6 @@ public class UserController {
     @Autowired
     AuthenticationManager authenticationManager;
 
-
-    @GetMapping("/welcome")
-    public String welcome() {
-        return "Welcome to Spring Security tutorials !!";
-    }
-
     @PostMapping("/addUser")
     public ResponseEntity<Object> registerUser(@Valid @RequestBody UserInfo userInfo) {
 
